@@ -21,6 +21,6 @@ export const Container = styled.div`
   }
   /* BREAKPOINT 1200px */
   @media (min-width: 75em) {
-    max-width: 100%;
+    max-width: 1100px;
   }
 `;

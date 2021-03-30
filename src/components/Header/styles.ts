@@ -2,30 +2,32 @@ import styled from "styled-components";
 import * as C from "../../styles/contants";
 
 export const Wrapper = styled.header`
-  background-color: ${C.NintentdoWhite};
+  position: relative;
+  background-color: transparent;
   box-shadow: 2px 2px 2px 2px ${C.NintentdoGray};
+  z-index: 1;
 `;
 
 export const Content = styled.div`
+  position: relative;
   max-width: 100%;
 
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
 
   padding: 8px 16px;
 `;
 
 export const Logo = styled.img`
-  max-width: 120px;
+  max-width: 15%;
   width: 100%;
   height: auto;
-
   object-fit: contain;
 `;
 
 export const Nav = styled.ul`
-  max-width: 400px;
+  max-width: 65%;
   width: 100%;
 
   display: flex;
@@ -48,6 +50,6 @@ export const Nav = styled.ul`
 `;
 
 export const Hamburger = styled.div`
-  max-width: 120px;
+  max-width: 15%;
   width: 100%;
 `;
