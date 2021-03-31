@@ -3,9 +3,9 @@ import * as C from "../../styles/contants";
 
 export const Wrapper = styled.header`
   position: relative;
-  background-color: transparent;
+  background-color: ${C.NintentdoWhite};
   box-shadow: 2px 2px 2px 2px ${C.NintentdoGray};
-  z-index: 1;
+  z-index: 99;
 `;
 
 export const Content = styled.div`
@@ -15,8 +15,6 @@ export const Content = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
-
-  padding: 8px 16px;
 `;
 
 export const Logo = styled.img`
@@ -50,6 +48,12 @@ export const Nav = styled.ul`
 `;
 
 export const Hamburger = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
   max-width: 15%;
   width: 100%;
+
+  cursor: pointer;
 `;

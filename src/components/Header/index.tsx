@@ -1,3 +1,5 @@
+import { MdMenu } from "react-icons/md";
+
 import { Container } from "../../styles/container";
 import * as Styled from "./styles";
 
@@ -22,7 +24,7 @@ const Header = () => {
             </li>
           </Styled.Nav>
 
-          <Styled.Hamburger>ham</Styled.Hamburger>
+          <Styled.Hamburger>{<MdMenu size={24} />}</Styled.Hamburger>
         </Styled.Content>
       </Container>
     </Styled.Wrapper>

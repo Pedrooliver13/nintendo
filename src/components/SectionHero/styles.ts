@@ -3,27 +3,25 @@ import styled from "styled-components";
 import * as C from "../../styles/contants";
 
 export const Wrapper = styled.section`
+  position: relative;
   max-width: 100%;
-  height: auto;
 
   display: flex;
   align-items: center;
   justify-content: center;
 
-  background-color: ${C.NintentdoGray};
-  z-index: 1;
+  background-color: ${C.NintentdoWhite};
 `;
 
 export const Content = styled.div`
-  position: relative;
+  max-width: 100%;
+  width: 100%;
 
   display: flex;
   align-items: center;
   justify-content: flex-start;
 
   height: 500px;
-  padding: 32px 16px;
-  
   z-index: 1;
 `;
 
@@ -40,6 +38,7 @@ export const Title = styled.h1`
 
 export const Description = styled.p`
   font-size: 1.3rem;
+  margin-bottom: 60px;
 `;
 
 export const Button = styled.button`
@@ -55,25 +54,23 @@ export const Button = styled.button`
 
   font-weight: 600;
   font-size: 1rem;
-
-  margin-top: 60px;
   padding: 12px 24px;
-  border-radius: 5px; 
+  border-radius: 5px;
 
   transition: all ease 0.5s;
 
   :hover {
     transform: translateX(5%);
   }
-`
+`;
 
 export const Image = styled.img`
-  position: absolute;
+  position: relative;
   max-width: 100%;
-  width: 600px;
-
-  top: -100px;
-  right: -85px;
-
-  z-index: 99;
+  width: 560px;
+  top: -36px;
+  right: -87px;
+  overflow: hidden;
+  z-index: 999;
+  pointer-events: none;
 `;
